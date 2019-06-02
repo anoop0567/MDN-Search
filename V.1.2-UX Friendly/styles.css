@@ -1,5 +1,5 @@
 body {
-  margin: 2em 1.5em 0em 1.5em;
+  margin: 2em 1.5em 0.5em 1.5em;
 }
 
 * {
@@ -35,6 +35,10 @@ input#search-bar:focus {
   transition: 0.35s ease;
 }
 
+.selected {
+  background-color: aliceblue;
+}
+
 .search-icon {
   position: absolute;
   width: 4em;
@@ -55,12 +59,17 @@ ul > li {
   border-top: none;
 }
 
+ul > li:first-child {
+  background-color: aliceblue;
+}
+
 ul > li > a {
   text-decoration: none;
   display: block;
-  padding: 0.8em 1.4em;
+  padding: 0.65em 1.4em;
   color: rgb(0, 0, 0);
   word-break: break-word;
+  margin: 0;
 }
 
 ul > li > a:hover {
